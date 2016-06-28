@@ -2,7 +2,7 @@ var http = require('http');
 const port = process.env.PORT;
 
 function handleRequest(req, res) {
-    res.end('This is working, *bloody hell*...');
+    res.end(':thumbsup: This is working, *bloody hell*...');
 }
 
 var server = http.createServer(handleRequest);
