@@ -1,5 +1,5 @@
 var http = require('http');
-const port = 80;
+const port = process.env.PORT;
 
 function handleRequest(req, res) {
     res.end('This is working, bloody hell...');
@@ -7,6 +7,6 @@ function handleRequest(req, res) {
 
 var server = http.createServer(handleRequest);
 
-server.listen(port, function(){
+server.listen(port, '0.0.0.0', function(){
     console.log('Server listening on port: %s', port);
 });
