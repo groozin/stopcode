@@ -2,6 +2,7 @@ var http = require('http');
 const port = process.env.PORT;
 
 function handleRequest(req, res) {
+    console.log(req.url);
     res.end(':thumbsup: This is working, *bloody hell*...');
 }
 
