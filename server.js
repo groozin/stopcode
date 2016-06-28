@@ -1,5 +1,5 @@
 var http = require('http');
-const port = 8080;
+const port = 80;
 
 function handleRequest(req, res) {
     res.end('This is working, bloody hell...');
