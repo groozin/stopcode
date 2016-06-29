@@ -42,7 +42,7 @@ function handleRequest(req, res) {
 		});
 }
 
-const port = 8080; //process.env.PORT;
+const port = process.env.PORT;
 const host = '0.0.0.0';
 const extractQueryStringParams = true;
 
