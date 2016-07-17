@@ -42,16 +42,8 @@ function handleRequest(req, res) {
 		});
 }
 
-const port = process.env.PORT;
-const host = '0.0.0.0';
 const extractQueryStringParams = true;
 
 var ASQ = require('asynquence');
 var _ = require('lodash');
 var url = require('url');
-var http = require('http');
-var server = http.createServer(handleRequest);
-
-server.listen(port, host, function () {
-	console.log('Server listening on port: %s', port);
-});
